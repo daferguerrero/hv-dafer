@@ -789,4 +789,9 @@ footer a {
         width: 100%;
         margin-bottom: 15px;
     }
+
+
+    .contacto .contenido-seccion .fila {
+        display: block;
+    }
 }
