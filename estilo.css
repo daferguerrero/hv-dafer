@@ -127,29 +127,29 @@ html {
 
 #inicio .contenido .presentacion h1 {
     color: var(--white-color);
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     margin-bottom: 25px;
     text-align: center;
 }
 
 #inicio .contenido .presentacion span {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: bold;
     color: var(--first-color);
 }
 
 #inicio .contenido .presentacion .descripcion {
     color: var(--bg-1-color);
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
-    max-width: 800px;
+    /* max-width: 850px; */
     margin: 25px auto;
     margin-bottom: 50px;
 }
 
 #inicio .contenido .presentacion .bienvenida {
     color: var(--bg-1-color);
-    font-size: 0.7rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 7px;
@@ -174,10 +174,8 @@ html {
 }
 
 #icono-nav {
-    color: var(--white-color);
     display: none;
 }
-
 
 
 /* *********************/
@@ -744,7 +742,7 @@ footer a {
 /* *********************/
 @media screen and (max-width: 1100px) {
     * {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -776,8 +774,25 @@ footer a {
         margin: 5px 0;
     }
 
+    nav.responsive ul li a {
+        /* border: 1px solid red; */
+        font-size: 1rem;
+    }
+
     #icono-nav {
         display: block;
+    }
+
+    #inicio .contenido header .contenido-header .responsive {
+        padding-top: 0;
+    }
+
+    #inicio .contenido header .contenido-header .responsive ul li a {
+        font-size: 1.2rem;
+    }
+
+    #inicio .contenido header .contenido-header #icono-nav i {
+        font-size: 1.5rem;
     }
 
     #sobremi .sobremi h2 {
@@ -792,6 +807,14 @@ footer a {
 @media screen and (max-width: 750px) {
     * {
         font-size: 14px;
+    }
+
+    #inicio .contenido header .contenido-header .responsive {
+        padding-top: 0;
+    }
+
+    #inicio .contenido header .contenido-header .responsive ul li a {
+        font-size: 0.8rem;
     }
 
     /** SECCION CURRICULUM **/
@@ -886,6 +909,14 @@ footer a {
 @media screen and (max-width: 650px) {
     * {
         font-size: 16px;
+    }
+
+    #inicio .contenido header .contenido-header .responsive  {
+        padding-top: 0;
+    }
+
+    #inicio .contenido header .contenido-header .responsive ul li a {
+        font-size: 0.8rem;
     }
 
 }
