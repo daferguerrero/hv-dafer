@@ -94,21 +94,20 @@ html {
     color: var(--first-color);
 }
 
-#inicio .contenido header .contenido-header .redes a {
+#inicio .contenido header .contenido-header .nav-redes a {
     text-decoration: none;
     display: inline-block;
     margin-left: 10px;
 }
 
-#inicio .contenido header .contenido-header .redes a i {
+#inicio .contenido header .contenido-header .nav-redes a i {
     color: var(--first-color);
     font-size: 24px;
     transition: .5s;
 }
-#inicio .contenido header .contenido-header .redes a i:hover {
+#inicio .contenido header .contenido-header .nav-redes a i:hover {
     color: var(--white-color);
 }
-
 
 #inicio .contenido header .contenido-header .seleccionado {
     color: var(--first-color);
@@ -178,6 +177,11 @@ html {
 #icono-nav {
     display: none;
 }
+
+#inicio .contenido .presentacion .nav-redes-2 {
+    display: none;
+}
+
 
 
 /* *********************/
@@ -413,10 +417,21 @@ html {
 } */
 
 .contenedor-skills .skill {
-    max-width: 600px;
+    width: 100%;
     margin: 30px auto;
 }
 
+.contenedor-skills .skill .fila {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.contenedor-skills .skill .fila .col {
+    margin-top: 30px;
+}
+
+/* ********************************************** */
 .contenedor-skills .skill .info {
     display: flex;
     justify-content: space-between;
@@ -762,8 +777,31 @@ html {
 }
 
 @media screen and (max-width: 900px) {
-    .redes {
-            display: none;
+    .nav-redes {
+        display: none;
+    }
+
+    #inicio .contenido .presentacion .nav-redes-2 {
+        display: inline-block;
+    }
+
+    #inicio .contenido .presentacion .nav-redes-2 a {
+        text-decoration: none;
+        margin-left: 10px;
+        font-size: 24px;
+        /* border: 1px solid var(--first-color); */
+        border: none;
+        background-color: none;
+    }
+    #inicio .contenido .presentacion .nav-redes-2 a:hover i {
+        color: var(--white-color);
+        background: transparent;
+    }
+
+    #inicio .contenido .presentacion .nav-redes-2 a i {
+        font-size: 40px;
+        transition: .5s;
+        color: var(--first-color);
     }
 
     nav {
@@ -790,12 +828,15 @@ html {
     }
 
     nav.responsive ul li a {
-        /* border: 1px solid red; */
         font-size: 1rem;
     }
 
     #icono-nav {
         display: block;
+    }
+
+    #icono-nav:hover {
+        cursor: pointer;
     }
 
     #inicio .contenido header .contenido-header .responsive {
